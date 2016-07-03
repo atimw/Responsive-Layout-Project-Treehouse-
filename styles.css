@@ -1,0 +1,55 @@
+body {
+    background: #dedede;
+}
+
+/********** Top Container General Styles **********/
+.top-container {
+    line-height: 1.6;
+    background: #fafafa;
+    color: #4a4a4a;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.top-container ul {
+    list-style-type: none;
+    background: #fafafa;
+    margin: 0 auto;
+    padding: 0 5% 0 5%;
+}
+
+.top-container li {
+    margin-top: 5px;
+    background: #ffffff;
+    padding: 1%;
+}
+
+.top-container a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 1em;
+    padding: 0 35% 0 35%;
+}
+
+.top-container p {
+    color: #7f7f7f;
+    font-family: sans-serif;
+    padding: 5% 5%;
+}
+
+.header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/********** Mobile Styles **********/
+@media (max-width: 481px) {
+    img {
+        margin-top: 10%;
+        max-width: 75%;
+    }
+}
