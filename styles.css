@@ -1,44 +1,45 @@
-body {
-    background: #dedede;
-}
-
-/********** Top Container General Styles **********/
-.top-container {
-    line-height: 1.6;
+/********** Home Container General Styles - Mobile First **********/
+.home {
     background: #fafafa;
     color: #4a4a4a;
-    width: 70%;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
     text-align: center;
     font-family: sans-serif;
     margin: 0 auto;
-    padding: 0;
+    padding: 5% 0 5% 0;
 }
 
-.top-container ul {
+.home ul {
     list-style-type: none;
     background: #fafafa;
     margin: 0 auto;
     padding: 0 5% 0 5%;
 }
 
-.top-container li {
+.home li {
     margin-top: 5px;
     background: #ffffff;
     padding: 1%;
 }
 
-.top-container a {
+.home a {
     text-decoration: none;
     color: #4a4a4a;
     font-size: 1em;
     padding: 0 35% 0 35%;
 }
 
-.top-container p {
+.home p {
     color: #7f7f7f;
     font-family: sans-serif;
     padding: 5% 5%;
+}
+
+.home h1, h2 {
+    margin: 0;
+    padding: 5% 0;
 }
 
 .header {
@@ -46,10 +47,118 @@ body {
     margin: 0 auto;
 }
 
-/********** Mobile Styles **********/
-@media (max-width: 481px) {
-    img {
-        margin-top: 10%;
-        max-width: 75%;
-    }
+img {
+    margin-top: 10%;
+    max-width: 75%;
+}
+
+/********** Portfolio Container General Styles - Mobile First **********/
+.portfolio {
+    background: #ffffff;
+    color: #4a4a4a;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0 auto;
+    padding: 5% 0 5% 0;
+}
+
+.portfolio ul {
+    list-style-type: none;
+    background: #ffffff;
+    margin: 0 auto;
+    padding: 0 5% 0 5%;
+}
+
+.portfolio li {
+    margin-top: 5px;
+    background: #ffffff;
+    padding: 1%;
+}
+
+.portfolio a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 1em;
+    padding: 0 35% 0 35%;
+}
+
+.portfolio p {
+    color: #7f7f7f;
+    font-family: sans-serif;
+    padding: 0 5%;
+}
+
+.portfolio h1 {
+    margin: 0;
+    padding-top: 2%;
+}
+
+/********** Contact Container General Styles - Mobile First **********/
+.contact {
+    background: #fafafa;
+    color: #4a4a4a;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0 auto;
+    padding: 5% 0 5% 0;
+    border-bottom: solid 1px;
+    border-color: #4a4a4a;
+    border-width: 75%;
+}
+
+.contact ul {
+    list-style-type: none;
+    background: #fafafa;
+    margin: 0 auto;
+    padding: 0 5% 0 5%;
+}
+
+.contact li {
+    margin-top: 5px;
+    background: #fafafa;
+    padding: 1%;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 1em;
+    padding: 0 5% 0 5%;
+}
+
+.contact p {
+    color: #7f7f7f;
+    font-family: sans-serif;
+    padding: 5% 5%;
+}
+
+.contact h1, h2 {
+    margin: 0;
+    padding: 5% 0;
+}
+
+/********** Footer Container General Styles - Mobile First **********/
+.footer {
+    background: #fafafa;
+    color: #4a4a4a;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0 auto;
+    padding: 5% 0 5% 0;
+}
+
+.footer h3 {
+    display: inline;
+    overflow: hidden;
+    padding: 5% 2%;
+    margin: 0;
 }
