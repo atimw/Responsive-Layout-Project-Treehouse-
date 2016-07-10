@@ -311,6 +311,30 @@ img {
 @media (min-width: 1024px) {
     
     /********** Home Container General Styles - >1024px **********/
+    .header .navigation {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .header {
+        height: auto;
+        width: 30%;
+        margin: 0 auto;
+        padding: 0;
+        float: left;
+    }
+    
+    .navigation {
+        height: auto;
+        width: auto;
+        margin: 0 auto;
+        padding: 25px 0 0 0%;
+    }
+    
+    .navigation li {
+        margin: 0 0 0 5%;
+    }
+    
     #profile, p {
         text-align: left;
     }
@@ -319,23 +343,29 @@ img {
     #portfolio {
         background: #fff;
         color: #4a4a4a;
-        width: 95%;
+        width: 100%;
         height: auto;
         text-align: center;
         font-family: sans-serif;
-        margin: 2% 2% 0 2%;
+        margin: 2% 0;
+        padding: 0;
+    }
+    
+    .portfolioItem {
+        margin: 0 auto;
         padding: 0;
     }
 
     .portfolioItem ul {
         background: #fff;
-        margin: 0 2% 0 2%;
+        margin: 0 auto;
+        padding: 0;
     }
 
     .portfolioItem li {
-        align-content: center;
-        padding: 0 2% 0 2%;
-        width: 29.3%;
+        width: 31.3%;
+        margin: 0 auto;
+        padding: 0 1% 0 1%;
     }
     
     /********** Contact Container General Styles - >1024px **********/
