@@ -1,5 +1,5 @@
 /********** Home Container General Styles - Mobile First **********/
-.home {
+#home {
     background: #fafafa;
     color: #4a4a4a;
     width: 100%;
@@ -7,37 +7,50 @@
     margin: 0 auto;
     text-align: center;
     font-family: sans-serif;
-    margin: 0 auto;
-    padding: 5% 0 5% 0;
+    padding: 0;
 }
 
-.home ul {
+.header, .navigation {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.navigation ul {
     list-style-type: none;
-    background: #fafafa;
-    margin: 0 auto;
-    padding: 0 5% 0 5%;
+    padding: 0;
+    align-self: center;
+    width: 90%;
 }
 
-.home li {
-    margin-top: 5px;
-    background: #ffffff;
-    padding: 1%;
+.navigation li {
+    margin: 0 0 3% 0;
+    background: #fff;
 }
 
-.home a {
+.navigation li, a {
     text-decoration: none;
     color: #4a4a4a;
-    font-size: 1em;
-    padding: 0 35% 0 35%;
+    width: 100%;
+    padding: 2% 0 2% 0;
 }
 
-.home p {
+.navigation a {
+    padding: 0 25% 0 25%;
+    background: #fff;
+}
+
+.navigation a:hover {
+    color: #9a9a9a;
+}
+
+#home p {
     color: #7f7f7f;
     font-family: sans-serif;
     padding: 5% 5%;
 }
 
-.home h1, h2 {
+#home h1, h2 {
     margin: 0;
     padding: 5% 0;
 }
@@ -53,7 +66,7 @@ img {
 }
 
 /********** Portfolio Container General Styles - Mobile First **********/
-.portfolio {
+#portfolio {
     background: #ffffff;
     color: #4a4a4a;
     width: 100%;
@@ -65,39 +78,38 @@ img {
     padding: 5% 0 5% 0;
 }
 
-.portfolio ul {
+.portfolioItem ul {
     list-style-type: none;
     background: #ffffff;
+    width: auto;
     margin: 0 auto;
     padding: 0 5% 0 5%;
 }
 
-.portfolio li {
-    margin-top: 5px;
+.portfolioItem li {
     background: #ffffff;
-    padding: 1%;
 }
 
-.portfolio a {
-    text-decoration: none;
-    color: #4a4a4a;
-    font-size: 1em;
-    padding: 0 35% 0 35%;
+.portfolioItem img {
+    min-width: 100%;
 }
 
-.portfolio p {
+#portfolio p {
     color: #7f7f7f;
     font-family: sans-serif;
     padding: 0 5%;
+    font-size: 1.2em;
+    font-weight: 300;
 }
 
-.portfolio h1 {
-    margin: 0;
-    padding-top: 2%;
+#portfolio h2 {
+    margin: 10% 10%;
+    padding: 0;
+    font-weight: 500;
 }
 
 /********** Contact Container General Styles - Mobile First **********/
-.contact {
+#contact {
     background: #fafafa;
     color: #4a4a4a;
     width: 100%;
@@ -107,44 +119,58 @@ img {
     font-family: sans-serif;
     margin: 0 auto;
     padding: 5% 0 5% 0;
-    border-bottom: solid 1px;
-    border-color: #4a4a4a;
+    border-bottom: solid 1px #4a4a4a;
     border-width: 75%;
 }
 
-.contact ul {
+.contactInfo ul {
     list-style-type: none;
     background: #fafafa;
     margin: 0 auto;
     padding: 0 5% 0 5%;
 }
 
-.contact li {
+.contactInfo li {
     margin-top: 5px;
     background: #fafafa;
     padding: 1%;
+    font-weight: 300;
 }
 
-.contact a {
+.contactInfo a {
     text-decoration: none;
     color: #4a4a4a;
     font-size: 1em;
+    background: #fafafa;
     padding: 0 5% 0 5%;
+    font-weight: 400;
 }
 
-.contact p {
+#contact p {
     color: #7f7f7f;
     font-family: sans-serif;
     padding: 5% 5%;
+    font-weight: 300;
 }
 
-.contact h1, h2 {
+#contact h2 {
     margin: 0;
     padding: 5% 0;
+    font-weight: 400;
+}
+
+#contact h3 {
+    margin: 0;
+    padding: 5% 0;
+    font-weight: 300;
 }
 
 /********** Footer Container General Styles - Mobile First **********/
-.footer {
+.footerLarge {
+    display: none;
+}
+
+.footerMobile {
     background: #fafafa;
     color: #4a4a4a;
     width: 100%;
@@ -156,9 +182,174 @@ img {
     padding: 5% 0 5% 0;
 }
 
-.footer h3 {
+.footerMobile p, a {
+    color: #4a4a4a;
+    background: #fafafa;
     display: inline;
-    overflow: hidden;
     padding: 5% 2%;
     margin: 0;
+    font-weight: 900;
+}
+
+.footerMobile a:hover {
+    color: #9a9a9a;
+}
+
+/********** Media Queries **********/
+
+@media (min-width: 768px) {
+    
+    /********** Home Container General Styles - >768px **********/
+    .navigation {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navigation ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .navigation li {
+        display: inline;
+        margin: 0;
+    }
+
+    .navigation li, a {
+        text-decoration: none;
+        color: #4a4a4a;
+        padding: 0;
+    }
+
+    .navigation a {
+        padding: 0 2.5% 0 2.5%;
+        background: #fafafa;
+    }
+    
+    .profile {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5%;
+    }
+    
+    .profile img {
+        order: 2;
+        padding: 0;
+        margin: 0 5% 0 0;
+    }
+    
+    .profile p {
+        margin: 0 0 0 5%;
+        padding: 0;
+    }
+
+
+    /********** Portfolio Container General Styles - >768px **********/
+    #portfolio {
+        background: #fff;
+        color: #4a4a4a;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        font-family: sans-serif;
+        margin: 0 auto;
+        padding: 5% 0 5% 0;
+    }
+
+    .portfolioItem ul {
+        overflow: hidden;
+        margin-left: 2%;
+    }
+
+    .portfolioItem li {
+        float: left;
+        padding-right: 2%;
+        width: 48%;
+    }
+    
+    /********** Contact Container General Styles - >768px **********/
+    #contact p {
+        width: 50%;
+        padding: 0 0 10% 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    /********** Footer Container General Styles - >768px **********/
+    .footerMobile {
+        display: none;
+    }
+    
+    .footerLarge {
+    background: #fafafa;
+    width: 100%;
+    font-family: sans-serif;
+    margin: 0 auto;
+    padding: 0 0 5% 0;
+    display: flex;
+    flex-direction: row;
+    text-align: center
+    }
+    
+    .footerLarge .navigation {
+        width: 50%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    .footerLarge p {
+        width: auto;
+        padding: 0 0 0 10%;
+        text-align: center;
+    }
+    
+    .footerLarge a {
+        width: auto;
+        display: inline;
+        color: #4a4a4a;
+        background: #fafafa;
+        padding: 0 5% 0 0;
+        margin: 0;
+        font-weight: 900;
+    }
+
+    .footerLarge a:hover {
+        color: #9a9a9a;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    
+    /********** Home Container General Styles - >1024px **********/
+    
+    /********** Portfolio Container General Styles - >1024px **********/
+    #portfolio {
+        background: #fff;
+        color: #4a4a4a;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        font-family: sans-serif;
+        margin: 0 auto;
+        padding: 5% 0 5% 0;
+    }
+
+    .portfolioItem ul {
+        overflow: hidden;
+        margin-left: 2%;
+    }
+
+    .portfolioItem li {
+        float: left;
+        padding-right: 2%;
+        width: 48%;
+    }
+    
+    /********** Contact Container General Styles - >1024px **********/
+    
+    /********** Footer Container General Styles - >1024px **********/
+    
 }
