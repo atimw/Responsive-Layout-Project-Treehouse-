@@ -63,6 +63,25 @@ img {
     max-width: 75%;
 }
 
+/********** Skills Container General Styles - Mobile First **********/
+#skills {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+#skills ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#skills li {
+    padding: 1px 0 1px 0;
+}
+
 /********** Portfolio Container General Styles - Mobile First **********/
 #portfolio {
     background: #fafafa;
@@ -224,7 +243,27 @@ img {
         font-weight: 300;
     }
 
-
+    /********** Skills Container General Styles - Mobile First **********/
+    #skills {
+        padding: 5% 0;
+    }
+    
+    #skills ul {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        list-style-type: none;
+        width: 96%;
+    }
+    
+    #skills li {
+        padding: 2% 2%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
     /********** Portfolio Container General Styles - >768px **********/
     #portfolio {
         overflow: hidden;
@@ -274,19 +313,19 @@ img {
     }
     
     .footerLarge .navigation {
-        width: 50%;
+        width: 80%;
         padding: 0;
         margin: 0 auto;
     }
     
     .footerLarge p {
-        width: auto;
-        padding: 0 0 0 10%;
+        width: 15%;
+        padding: 0 0 0 5%;
         text-align: center;
     }
     
     .footerLarge ul {
-        padding: 0 0 0 50%;
+        padding: 0;
     }
     
     .footerLarge li {
@@ -298,7 +337,7 @@ img {
         display: inline;
         color: #4a4a4a;
         background: #fafafa;
-        padding: 0 5% 0 5%;
+        padding: 0 0 0 10%;
         font-weight: 900;
     }
 
