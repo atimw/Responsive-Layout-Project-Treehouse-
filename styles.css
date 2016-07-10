@@ -1,3 +1,7 @@
+body {
+background: #fafafa;    
+}
+
 /********** Home Container General Styles - Mobile First **********/
 #home {
     background: #fafafa;
@@ -7,6 +11,7 @@
     margin: 0 auto;
     text-align: center;
     font-family: sans-serif;
+    font-size: 1.2em;
     padding: 0;
 }
 
@@ -30,7 +35,6 @@
 
 .navigation li, a {
     text-decoration: none;
-    color: #4a4a4a;
     width: 100%;
     padding: 2% 0 2% 0;
 }
@@ -44,15 +48,9 @@
     color: #9a9a9a;
 }
 
-#home p {
-    color: #7f7f7f;
-    font-family: sans-serif;
-    padding: 5% 5%;
-}
-
-#home h1, h2 {
-    margin: 0;
-    padding: 5% 0;
+.profile p {
+    padding-bottom: 2%;
+    font-weight: 300;
 }
 
 .header {
@@ -67,102 +65,83 @@ img {
 
 /********** Portfolio Container General Styles - Mobile First **********/
 #portfolio {
-    background: #ffffff;
+    background: #fafafa;
     color: #4a4a4a;
     width: 100%;
     height: auto;
     margin: 0 auto;
     text-align: center;
     font-family: sans-serif;
+    font-size: 1.2em;
     margin: 0 auto;
-    padding: 5% 0 5% 0;
+    padding: 5% 0 0 0;
 }
 
 .portfolioItem ul {
     list-style-type: none;
-    background: #ffffff;
+    background: #fff;
     width: auto;
     margin: 0 auto;
-    padding: 0 5% 0 5%;
-}
-
-.portfolioItem li {
-    background: #ffffff;
+    padding: 0 5% 2% 5%;
 }
 
 .portfolioItem img {
     min-width: 100%;
+    padding: 0 0 2% 0;
 }
 
-#portfolio p {
-    color: #7f7f7f;
+.portfolioItem p {
+    color: #4a4a4a;
     font-family: sans-serif;
-    padding: 0 5%;
-    font-size: 1.2em;
     font-weight: 300;
 }
 
-#portfolio h2 {
-    margin: 10% 10%;
-    padding: 0;
+.portfolioItem h2 {
     font-weight: 500;
+    padding: 5% 0 0 0;
+    margin: 0 auto;
 }
 
 /********** Contact Container General Styles - Mobile First **********/
 #contact {
     background: #fafafa;
     color: #4a4a4a;
-    width: 100%;
+    width: 90%;
     height: auto;
     margin: 0 auto;
     text-align: center;
     font-family: sans-serif;
-    margin: 0 auto;
-    padding: 5% 0 5% 0;
-    border-bottom: solid 1px #4a4a4a;
-    border-width: 75%;
+    font-size: 1.2em;
+    border-bottom: solid .5px #4a4a4a;
 }
 
 .contactInfo ul {
     list-style-type: none;
-    background: #fafafa;
     margin: 0 auto;
-    padding: 0 5% 0 5%;
+    padding: 0 0 2% 0;
 }
 
 .contactInfo li {
     margin-top: 5px;
-    background: #fafafa;
-    padding: 1%;
     font-weight: 300;
 }
 
 .contactInfo a {
     text-decoration: none;
-    color: #4a4a4a;
-    font-size: 1em;
-    background: #fafafa;
     padding: 0 5% 0 5%;
-    font-weight: 400;
+    font-weight: 500;
 }
 
-#contact p {
-    color: #7f7f7f;
-    font-family: sans-serif;
-    padding: 5% 5%;
+#contact, p {
     font-weight: 300;
 }
 
-#contact h2 {
-    margin: 0;
-    padding: 5% 0;
-    font-weight: 400;
+#contact, h2 {
+    font-weight: 500;
 }
 
-#contact h3 {
-    margin: 0;
-    padding: 5% 0;
-    font-weight: 300;
+#contact, h3 {
+    font-weight: 400;
 }
 
 /********** Footer Container General Styles - Mobile First **********/
@@ -178,17 +157,18 @@ img {
     margin: 0 auto;
     text-align: center;
     font-family: sans-serif;
+    font-size: 1.2em;
     margin: 0 auto;
     padding: 5% 0 5% 0;
+    clear: both;
 }
 
 .footerMobile p, a {
     color: #4a4a4a;
-    background: #fafafa;
     display: inline;
     padding: 5% 2%;
     margin: 0;
-    font-weight: 900;
+    font-weight: 500;
 }
 
 .footerMobile a:hover {
@@ -235,17 +215,19 @@ img {
     .profile img {
         order: 2;
         padding: 0;
-        margin: 0 5% 0 0;
+        margin: 0 5% 0 2%;
     }
     
     .profile p {
-        margin: 0 0 0 5%;
+        margin: 0 2% 0 5%;
         padding: 0;
+        font-weight: 300;
     }
 
 
     /********** Portfolio Container General Styles - >768px **********/
     #portfolio {
+        overflow: hidden;
         background: #fff;
         color: #4a4a4a;
         width: 100%;
@@ -258,7 +240,6 @@ img {
     }
 
     .portfolioItem ul {
-        overflow: hidden;
         margin-left: 2%;
     }
 
@@ -270,8 +251,8 @@ img {
     
     /********** Contact Container General Styles - >768px **********/
     #contact p {
-        width: 50%;
-        padding: 0 0 10% 0;
+        width: 75%;
+        padding: 0 2% 2% 2%;
         margin: 0 auto;
         text-align: center;
     }
@@ -282,14 +263,14 @@ img {
     }
     
     .footerLarge {
-    background: #fafafa;
-    width: 100%;
-    font-family: sans-serif;
-    margin: 0 auto;
-    padding: 0 0 5% 0;
-    display: flex;
-    flex-direction: row;
-    text-align: center
+        background: #fafafa;
+        width: 100%;
+        font-family: sans-serif;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
     }
     
     .footerLarge .navigation {
@@ -304,13 +285,20 @@ img {
         text-align: center;
     }
     
+    .footerLarge ul {
+        padding: 0 0 0 50%;
+    }
+    
+    .footerLarge li {
+        background: #fafafa;
+    }
+    
     .footerLarge a {
         width: auto;
         display: inline;
         color: #4a4a4a;
         background: #fafafa;
-        padding: 0 5% 0 0;
-        margin: 0;
+        padding: 0 5% 0 5%;
         font-weight: 900;
     }
 
@@ -323,33 +311,36 @@ img {
 @media (min-width: 1024px) {
     
     /********** Home Container General Styles - >1024px **********/
+    #profile, p {
+        text-align: left;
+    }
     
     /********** Portfolio Container General Styles - >1024px **********/
     #portfolio {
         background: #fff;
         color: #4a4a4a;
-        width: 100%;
+        width: 95%;
         height: auto;
-        margin: 0 auto;
         text-align: center;
         font-family: sans-serif;
-        margin: 0 auto;
-        padding: 5% 0 5% 0;
+        margin: 2% 2% 0 2%;
+        padding: 0;
     }
 
     .portfolioItem ul {
-        overflow: hidden;
-        margin-left: 2%;
+        background: #fff;
+        margin: 0 2% 0 2%;
     }
 
     .portfolioItem li {
-        float: left;
-        padding-right: 2%;
-        width: 48%;
+        align-content: center;
+        padding: 0 2% 0 2%;
+        width: 29.3%;
     }
     
     /********** Contact Container General Styles - >1024px **********/
     
     /********** Footer Container General Styles - >1024px **********/
+    
     
 }
