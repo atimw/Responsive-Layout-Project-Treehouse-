@@ -286,6 +286,7 @@ img {
         float: left;
         padding-right: 2%;
         width: 48%;
+        height: 500px;
     }
     
     /********** Contact Container General Styles - >768px **********/
@@ -405,6 +406,7 @@ img {
         width: 31.3%;
         margin: 0 auto;
         padding: 0 1% 0 1%;
+        height: 500px;
     }
     
     /********** Contact Container General Styles - >1024px **********/
