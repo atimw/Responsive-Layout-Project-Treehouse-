@@ -15,34 +15,27 @@ background: #fafafa;
     padding: 0;
 }
 
-.header, .navigation {
+.header, .navigation nav {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
 }
 
-.navigation ul {
+.navigation nav {
     list-style-type: none;
     padding: 0;
-    align-self: center;
     width: 90%;
 }
 
-.navigation li {
-    margin: 0 0 3% 0;
-    background: #fff;
-}
 
-.navigation li, a {
+.navigation nav, a {
     text-decoration: none;
     width: 100%;
     padding: 2% 0 2% 0;
+    margin: 0 0 3% 0;
+    background: #fafafa;
 }
 
-.navigation a {
-    padding: 0 25% 0 25%;
-    background: #fff;
-}
 
 .navigation a:hover {
     color: #9a9a9a;
@@ -199,32 +192,20 @@ img {
 @media (min-width: 768px) {
     
     /********** Home Container General Styles - >768px **********/
-    .navigation {
-        margin: 0;
-        padding: 0;
-    }
-
-    .navigation ul {
+    .navigation nav {
+        display: inline;
         list-style-type: none;
         padding: 0;
-    }
-
-    .navigation li {
-        display: inline;
         margin: 0;
     }
 
-    .navigation li, a {
+    .navigation, nav a {
         text-decoration: none;
         color: #4a4a4a;
-        padding: 0;
-    }
-
-    .navigation a {
         padding: 0 2.5% 0 2.5%;
         background: #fafafa;
     }
-    
+
     .profile {
         display: flex;
         flex-direction: row;
@@ -364,14 +345,14 @@ img {
         float: left;
     }
     
-    .navigation {
+    .navigation, nav {
         height: auto;
         width: auto;
         margin: 0 auto;
-        padding: 25px 0 0 0%;
+        padding: 45px 0 0 0%;
     }
     
-    .navigation li {
+    .navigation a {
         margin: 0 0 0 5%;
     }
     
