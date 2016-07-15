@@ -224,7 +224,7 @@ img {
         font-weight: 300;
     }
 
-    /********** Skills Container General Styles - Mobile First **********/
+    /********** Skills Container General Styles - >768 **********/
     #skills {
         padding: 5% 0;
     }
@@ -243,11 +243,13 @@ img {
         padding: 2% 2%;
         margin: 0 auto;
         text-align: center;
+        box-shadow: 10px 5px 25px #52bab4;
+        background: #fdd275;
     }
     
     /********** Portfolio Container General Styles - >768px **********/
     #portfolio {
-        overflow: hidden;
+        overflow: auto;
         background: #fff;
         color: #4a4a4a;
         width: 100%;
@@ -283,49 +285,34 @@ img {
         display: none;
     }
     
-    .footerLarge {
-        background: #fafafa;
-        width: 100%;
-        font-family: sans-serif;
-        margin: 0 auto;
-        padding: 0;
+    .footerLarge, .nav p {
         display: flex;
         flex-direction: row;
-        text-align: center;
     }
     
-    .footerLarge .navigation {
-        width: 80%;
+    .footerLarge nav {
+        width: 75%;
+        display: inline-block;
+        list-style-type: none;
+        text-align: center;
+        padding: 2% 0 0 0;
+        margin: 0;
+    }
+
+    .footerLarge, .nav a {
+        text-decoration: none;
+        color: #4a4a4a;
+        background: #fafafa;
         padding: 0;
         margin: 0 auto;
+        font-weight: 500;
     }
     
     .footerLarge p {
-        width: 15%;
-        padding: 0 0 0 5%;
-        text-align: center;
+        padding: 2% 0 2% 0;
+        margin: 0 auto;
     }
     
-    .footerLarge ul {
-        padding: 0;
-    }
-    
-    .footerLarge li {
-        background: #fafafa;
-    }
-    
-    .footerLarge a {
-        width: auto;
-        display: inline;
-        color: #4a4a4a;
-        background: #fafafa;
-        padding: 0 0 0 10%;
-        font-weight: 900;
-    }
-
-    .footerLarge a:hover {
-        color: #9a9a9a;
-    }
 
 }
 
@@ -353,7 +340,7 @@ img {
     }
     
     .navigation a {
-        margin: 0 0 0 5%;
+        margin: 0 0 0 2%;
     }
     
     #profile, p {
@@ -365,11 +352,12 @@ img {
         background: #fff;
         color: #4a4a4a;
         width: 100%;
-        height: auto;
+        height: 100%;
         text-align: center;
         font-family: sans-serif;
         margin: 2% 0;
         padding: 0;
+        overflow: auto;
     }
     
     .portfolioItem {
@@ -387,7 +375,7 @@ img {
         width: 31.3%;
         margin: 0 auto;
         padding: 0 1% 0 1%;
-        height: 500px;
+        max-height: 50%;
     }
     
     /********** Contact Container General Styles - >1024px **********/
